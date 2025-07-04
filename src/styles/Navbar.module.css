@@ -1,0 +1,92 @@
+.navbar {
+  width: 30vw;
+  height: 100vh;
+  background-color: #0a192f;
+  color: #ccd6f6;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.sub {
+  font-size: 1.15rem;
+  color: #8892b0;
+  margin-bottom: 2rem;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.link {
+  position: relative;
+  padding-left: 2rem;
+  color: #8892b0;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1px;
+  background-color: #495670;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.link:hover,
+.link.active {
+  color: #ffffff;
+  padding-left: 3rem;
+}
+
+.link:hover::before,
+.link.active::before {
+  width: 2rem;
+  background-color: #ffffff;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: flex-start;
+  margin-top: auto; 
+  margin-bottom: 10rem;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  color: #9898b4;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
